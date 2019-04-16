@@ -1,86 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="bootstarp.css" rel="stylesheet">
-    <link href="css.css" rel="stylesheet">
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script type="text/javascript" src="js.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+  
+  
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="bootstarp.css">
+  <link rel="stylesheet" href="css2.css">
+  <script type="text/javascript" src="js.js"></script>
+
 </head>
+
 <body>
-    <div class="sbox">
-        <div class="row ">
-          <span class="col-8 col-sm-9" id="sboxheading">Etherium Blockchain Explorer</span>
-          <div class="col-4 col-sm-3 links">
-              <span> Quicklinks</span>
-              <a href="www.google.com">ERC 20 Tokens</a>
-              <a href="www.google.com">ERC 721 Tokens</a>
+  <div class="sbox container-fluid">
+    <div class="row ">
+      <span class="col-8 col-sm-9" id="sboxheading">Etherium Blockchain Explorer</span>
+      <div class="col-4 col-sm-3 links">
+        <span> Quicklinks</span>
+        <a href="www.google.com">ERC 20 Tokens</a>
+        <a href="www.google.com">ERC 721 Tokens</a>
+      </div>
+
+    </div>
+
+    <div class="input-group mb-3 in">
+      <div class="input-group-prepend">
+        <button class="form-control btn dropdown-toggle" type="button" style="background: white">All filters</button>
+      </div>
+      <input class="form-control" type="text" placeholder="Search by Address/Txhash/Block/Token/Ens">
+      <div class="input-group-prepend">
+        <button class="btn btn-primary">Search</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid secondbox">
+    <div class="row" style="margin: 0px;">
+      <div class="col-md box">
+        <div class="row abox">
+          <img src="img/eprice.PNG">
+          <span class="col-10">ETHER PRICE<nav></nav>$ 162.5 @ 0.03286 BTC(<span
+              style="color: green">+6.98%</span>)</span>
+        </div>
+        <div class="row dbox">
+          <img src="img/mcap.PNG">
+          <span class="col-10">market cap<nav></nav>$ 17.479 Billion</span>
+        </div>
+      </div>
+
+
+      <div class="col-md box">
+        <div class="row  abox">
+          <img src="img/lat.PNG">
+          <span class="col-6">LATEST BLOCK<nav></nav>7527073(13.4s)</span>
+          <span class="col-4">TRANSACTIONS<nav></nav>420.19M(7.3 TPS)</span>
+        </div>
+        <div class="row dbox">
+          <img src="img/difi.PNG">
+          <span class="col-6">DIFFICULTY<nav></nav>1,835.02 TH</span>
+          <span class="col-4">HASH RATE<nav></nav>143768.72 GH/s</span>
+
+        </div>
+
+      </div>
+      <div class="col-md-3 box">
+           <canvas id="myChart"></canvas>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <div class="container-fluid secondbox">
+    <div class="row">
+      <div class="col-md-6 rborder">
+        <div class="row">
+          <div class="col-12 theads">
+            <span>Latest Blocks</span>
           </div>
-         
         </div>
+        <div class="row">
+          <table class="table">
 
-        <div class="input-group mb-3 in">
-            <div class="input-group-prepend"> 
-                <button class="form-control btn dropdown-toggle" type="button" style="background: white">All filters</button>
-            </div>
-            <input class="form-control" type="text" placeholder="Search by Address/Txhash/Block/Token/Ens">
-            <div class="input-group-prepend">
-                <button class="btn btn-primary">Search</button>
-            </div>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
 
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
+      </div>
+
+      <div class="col-md-6 rborder">
+        <div class="row">
+          <div class="col-12 theads">
+            <span>Latest Blocks</span>
+          </div>
+        </div>
+        <div class="row">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    
-
-    <div class="container-fluid secondbox">
-            <div class="row">
-                <div class="col-md box">
-                    <div class="row abox">
-                        <img  src="img/eprice.PNG">
-                        <span class="col-10">ETHER PRICE<nav></nav>$ 162.5 @ 0.03286 BTC(<span style="color: green">+6.98%</span>)</span>
-                    </div>
-                    <div class="row dbox">
-                            <img  src="img/mcap.PNG">
-                            <span class="col-10">market cap<nav></nav>$ 17.479 Billion</span>
-                    </div>
-                </div>
-                
-                
-                <div class="col-md box">
-                        <div class="row  abox">
-                                <img  src="img/lat.PNG">
-                                <span class="col-6">LATEST BLOCK<nav></nav>7527073(13.4s)</span>
-                                <span class="col-4">TRANSACTIONS<nav></nav>420.19M(7.3 TPS)</span>
-                            </div>
-                            <div class="row dbox">
-                                    <img  src="img/difi.PNG">
-                                    <span class="col-6">DIFFICULTY<nav></nav>1,835.02 TH</span>
-                                    <span class="col-4">HASH RATE<nav></nav>143768.72 GH/s</span>
-
-                            </div>
-                </div>
-                
-
-                <div class="col-md box" id="chartContainer" >
-                    
-                    
-                            
-                    </div>
-                        
-                </div>
-                
-            </div>
-    </div>
-    
-        
-      
-              
-        
-
-    
 </body>
+
 </html>

@@ -1,68 +1,63 @@
-window.onload = function () {
+$(()=>{
+  console.log('loaded');
+  var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: 'line',
 
-    var dps = [{x: new Date(2012,2,21), y: 10}, {x: new Date(2012,2,28), y: 20}];   //dataPoints. 
-
-    var chart = new CanvasJS.Chart("chartContainer",{
-      theme:'light2',
-      animationEnabled:true,
-
-        title :{
-            text: "ETHEREUM TRANSACTION HISTORY IN 14 DAYS"
-        },
-        axisX: {
-          gridThickness: 0,
-        tickLength: 0,
-        lineThickness: 0,
-        labelAngle: 180,
-        interval: 7,
-        intervalType: "day",
-        minimum:new Date(2012,2,21),
-        maximum:new Date(2012,3,4),
+  // The data for our dataset
+  data: {
+      labels: ['Mar 21', 'Mar 28', 'Apr 4'],
+      datasets: [{
+          label:'ETHEREUM TRANSACTION HISTORY IN 14 DAYS',
+          fill:false,
+          borderWidth:2,
+          borderColor:'black',
         
-                                 
-            title: "",
-            labelFormatter: function (e) {
-				return CanvasJS.formatDate( e.value, "DD MMM");
-			}
-        },
-        axisY: {
-          gridThickness: 0,
-       tickLength: 0,
-        lineThickness: 0,
-                           
-            title: ""
-        },
-        data: [{
-            type: "spline",
-            lineColor:'black',
-            markerType: "none",
-            lineThickness: 0,
-            dataPoints : dps
-        }]
-    });
+          data: [400, 600, 800, 2, 20, 30, 45]
+      }]
+  },
 
-    chart.render();
-    var xVal = dps.length + 1;
-    var yVal = 15;	
-    var updateInterval = 10000;
-
-    var updateChart = function () {
-        
-        
-        yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
-        dps.push({x: xVal,y: yVal});
-        
-        xVal++;
-        if (dps.length >  10 )
+  // Configuration options go here
+  options: {
+    scales:{
+      yAxes:[
         {
-            dps.shift();				
+          ticks:{
+            min:400,
+            max:800,
+            stepSize:200
+          },
+          gridLines:{
+
+               display:false,
+               drawBorder:false
+          }
         }
+      ],
+      xAxes:[{
+        gridLines:{
+          display:false,
+          drawBorder:false
+     }
+      }
 
-        chart.render();		
+      ]
+    },
+    legend:{
+      labels:{
+        fontColor:'gray',
+    
+      }
+      
+    },
+    elements:{
+      point:{
+        radius:0
 
-  // update chart after specified time. 
+      }
 
-}
-
-//setInterval(function(){updateChart()}, updateInterval); 
-}
+    }
+  }
+});
+})
