@@ -1,7 +1,7 @@
 $(()=>{
   console.log('loaded');
-  var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
+  const ctx = document.getElementById('myChart').getContext('2d');
+const chart = new Chart(ctx, {
   // The type of chart we want to create
   type: 'line',
 
@@ -14,7 +14,7 @@ var chart = new Chart(ctx, {
           borderWidth:2,
           borderColor:'black',
         
-          data: [400, 600, 800, 2, 20, 30, 45]
+          data: [400, 600, 800]
       }]
   },
 
@@ -47,6 +47,7 @@ var chart = new Chart(ctx, {
     legend:{
       labels:{
         fontColor:'gray',
+        fontSize:9
     
       }
       
@@ -60,4 +61,12 @@ var chart = new Chart(ctx, {
     }
   }
 });
+function dynamicUpdate()
+{
+  chart.data.datasets[0].data.push(100);
+  chart.data.labels.push('Apr 11');
+  chart.update();
+
+}
+//setInterval(dynamicUpdate,8000);
 })

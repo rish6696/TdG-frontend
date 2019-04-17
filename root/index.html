@@ -11,50 +11,58 @@
     crossorigin="anonymous"></script>
   
   
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css.css">
-  <link rel="stylesheet" href="bootstarp.css">
-  <link rel="stylesheet" href="css2.css">
   <script type="text/javascript" src="js.js"></script>
 
 </head>
 
 <body>
   <div class="sbox container-fluid">
-    <div class="row ">
-      <span class="col-8 col-sm-9" id="sboxheading">Etherium Blockchain Explorer</span>
-      <div class="col-4 col-sm-3 links">
-        <span> Quicklinks</span>
-        <a href="www.google.com">ERC 20 Tokens</a>
-        <a href="www.google.com">ERC 721 Tokens</a>
-      </div>
 
+    
+   
+<div class="row">
+    <span class="col-8 col-sm-9" id="sboxheading">Etherium Blockchain Explorer</span>
+    <div class="col-4 col-sm-3 links">
+      <span> Quicklinks</span>
+      <a href="www.google.com">ERC 20 Tokens</a>
+      <a href="www.google.com">ERC 721 Tokens</a>
     </div>
 
-    <div class="input-group mb-3 in">
-      <div class="input-group-prepend">
-        <button class="form-control btn dropdown-toggle" type="button" style="background: white">All filters</button>
-      </div>
-      <input class="form-control" type="text" placeholder="Search by Address/Txhash/Block/Token/Ens">
-      <div class="input-group-prepend">
-        <button class="btn btn-primary">Search</button>
-      </div>
+  </div>
+  
 
+  <div class="input-group mb-3 in">
+    <div class="input-group-prepend">
+      <button class="form-control btn dropdown-toggle" type="button" style="background: white">All filters</button>
     </div>
+    <input class="form-control" type="text" placeholder="Search by Address/Txhash/Block/Token/Ens">
+    <div class="input-group-prepend">
+      <button class="btn btn-primary">Search</button>
+    </div>
+
+  </div>
+    
+
+    
 
   </div>
 
 
   <div class="container-fluid secondbox">
-    <div class="row" style="margin: 0px;">
+    <div class="row" style="margin: 0px; background-color: white">
       <div class="col-md box">
         <div class="row abox">
           <img src="img/eprice.PNG">
-          <span class="col-10">ETHER PRICE<nav></nav>$ 162.5 @ 0.03286 BTC(<span
+          <span class="col-10 bgray">ETHER PRICE<nav></nav><span class="bblack"><b>$ 162.5</b></span> <span class="bbgray">@ 0.03286 BTC</span>(<span
               style="color: green">+6.98%</span>)</span>
         </div>
         <div class="row dbox">
           <img src="img/mcap.PNG">
-          <span class="col-10">market cap<nav></nav>$ 17.479 Billion</span>
+          <span class="col-10 bgray">MARKET CAP<nav></nav><span class="bblack"><b>$ 17.479 Billion</b></span></span>
         </div>
       </div>
 
@@ -62,13 +70,14 @@
       <div class="col-md box">
         <div class="row  abox">
           <img src="img/lat.PNG">
-          <span class="col-6">LATEST BLOCK<nav></nav>7527073(13.4s)</span>
-          <span class="col-4">TRANSACTIONS<nav></nav>420.19M(7.3 TPS)</span>
+          <span class="col-6 bgray">LATEST BLOCK<nav></nav><span class="bblack"><b>7527073</b><span class="gsmall">(13.4s)</span></span></span>
+          <span class="col-4 bgray">TRANSACTIONS<nav></nav><span class="bblack"><b>420.19M<span class="gsmall">(7.3TPS)</span></b></span></span>
+
         </div>
         <div class="row dbox">
           <img src="img/difi.PNG">
-          <span class="col-6">DIFFICULTY<nav></nav>1,835.02 TH</span>
-          <span class="col-4">HASH RATE<nav></nav>143768.72 GH/s</span>
+          <span class="col-6 bgray">DIFFICULTY<nav></nav><span class="bblack"><b>1,835.02 TH</b></span></span>
+          <span class="col-4 bgray">HASH RATE<nav></nav><span class="bblack"><b>143,768.72 GH/s</b></span></span>
 
         </div>
 
@@ -85,80 +94,164 @@
 
   </div>
 
-  <div class="container-fluid secondbox">
+  <div class="container-fluid secondbox thirdbox">
     <div class="row">
-      <div class="col-md-6 rborder">
-        <div class="row">
-          <div class="col-12 theads">
-            <span>Latest Blocks</span>
+      <div class="col-md cl">
+        <div class="row he">
+          <div class="col"><b>Latest Blocks</b></div>
+        </div>
+        <div class="row" style="padding: 20px;">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-3 smallbox" style="text-align: center"><b>BK</b></div>
+                <div class="col-9 bluet">7527073 <nav></nav><span class="gsmall">12sec ago</span></div>
+              </div>
+              
+            </div>
+            <div class="col-4">
+                Miner <span class="bluet">Ethermine<nav></nav>19 txns</span> <span class="gsmall">in 2sec</span> 
+                
+              </div>
+              <div class="col-3" style="text-align: right; padding: 0px;">
+                <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">2.0083 ETH</span>
+              </div>
+          
+            
           </div>
-        </div>
-        <div class="row">
-          <table class="table">
-
-            <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="col-md-6 rborder">
-        <div class="row">
-          <div class="col-12 theads">
-            <span>Latest Blocks</span>
+        <div class="row" style="padding: 20px;">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-3 smallbox" style="text-align: center"><b>BK</b></div>
+                <div class="col-9 bluet">7527073 <nav></nav><span class="gsmall">12sec ago</span></div>
+              </div>
+              
+            </div>
+            <div class="col-4">
+                Miner <span class="bluet">Ethermine<nav></nav>19 txns</span> <span class="gsmall">in 2sec</span> 
+                
+              </div>
+              <div class="col-3" style="text-align: right; padding: 0px;">
+                <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">2.0083 ETH</span>
+              </div>
+          
+            
           </div>
-        </div>
-        <div class="row">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div class="row" style="padding: 20px;">
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-3 smallbox" style="text-align: center"><b>BK</b></div>
+                  <div class="col-9 bluet">7527073 <nav></nav><span class="gsmall">12sec ago</span></div>
+                </div>
+                
+              </div>
+              <div class="col-4">
+                  Miner <span class="bluet">Ethermine<nav></nav>19 txns</span> <span class="gsmall">in 2sec</span> 
+                  
+                </div>
+                <div class="col-3" style="text-align: right; padding: 0px;">
+                  <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">2.0083 ETH</span>
+                </div>
+            
+              
+            </div>
+            <div class="row" style="padding: 20px;">
+                <div class="col-5">
+                  <div class="row">
+                    <div class="col-3 smallbox" style="text-align: center"><b>BK</b></div>
+                    <div class="col-9 bluet">7527073 <nav></nav><span class="gsmall">12sec ago</span></div>
+                  </div>
+                  
+                </div>
+                <div class="col-4">
+                    Miner <span class="bluet">Ethermine<nav></nav>19 txns</span> <span class="gsmall">in 2sec</span> 
+                    
+                  </div>
+                  <div class="col-3" style="text-align: right; padding: 0px;">
+                    <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">2.0083 ETH</span>
+                  </div>
+              
+                
+              </div>
       </div>
+        <div class="col-md cl">
+          <div class="row he">
+            <div class="col"><b>Transactions</b></div>
+          </div>
+          <div class="row" style="padding: 20px;">
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-3 smallbox round" style="text-align: center"><b>Tx</b></div>
+                  <div class="col-9"><span class="bluet">0x1a0020e145</span> <nav></nav><span class="gsmall">12sec ago</span></div>
+                </div>
+                
+              </div>
+              <span class="col-5">
+                From <span class="bluet">0xac1ed4fabbd520...</span><nav></nav>To <span class="bluet">0xac1ed4fabbd520...</span>
+              </span>
+                <div class="col-2" style="text-align: right; padding: 0px;">
+                  <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">0 Eth</span>
+                </div>
+            
+              
+            </div>
+          <div class="row" style="padding: 20px;">
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-3 smallbox round" style="text-align: center"><b>Tx</b></div>
+                  <div class="col-9"><span class="bluet">0x1a0020e145</span> <nav></nav><span class="gsmall">12sec ago</span></div>
+                </div>
+                
+              </div>
+              <span class="col-5">
+                From <span class="bluet">0xac1ed4fabbd520...</span><nav></nav>To <span class="bluet">0xac1ed4fabbd520...</span>
+              </span>
+                <div class="col-2" style="text-align: right; padding: 0px;">
+                  <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">0 Eth</span>
+                </div>
+            
+              
+            </div>
+            <div class="row" style="padding: 20px;">
+                <div class="col-5">
+                  <div class="row">
+                    <div class="col-3 smallbox round" style="text-align: center"><b>Tx</b></div>
+                    <div class="col-9"><span class="bluet">0x1a0020e145</span> <nav></nav><span class="gsmall">12sec ago</span></div>
+                  </div>
+                  
+                </div>
+                <span class="col-5">
+                  From <span class="bluet">0xac1ed4fabbd520...</span><nav></nav>To <span class="bluet">0xac1ed4fabbd520...</span>
+                </span>
+                  <div class="col-2" style="text-align: right; padding: 0px;">
+                    <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">0 Eth</span>
+                  </div>
+              
+                
+              </div>
+              <div class="row" style="padding: 20px;">
+                  <div class="col-5">
+                    <div class="row">
+                      <div class="col-3 smallbox round" style="text-align: center"><b>Tx</b></div>
+                      <div class="col-9"><span class="bluet">0x1a0020e145</span> <nav></nav><span class="gsmall">12sec ago</span></div>
+                    </div>
+                    
+                  </div>
+                  <span class="col-5">
+                    From <span class="bluet">0xac1ed4fabbd520...</span><nav></nav>To <span class="bluet">0xac1ed4fabbd520...</span>
+                  </span>
+                    <div class="col-2" style="text-align: right; padding: 0px;">
+                      <span style="background-color: #F3F3F5; padding: 2px;" class="gsmall">0 Eth</span>
+                    </div>
+                
+                  
+                </div>
+        </div>
+
+      
+
     </div>
+  </div>
+    
 </body>
 
 </html>

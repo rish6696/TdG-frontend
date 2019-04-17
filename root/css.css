@@ -1,0 +1,106 @@
+.sbox{
+    background-image: linear-gradient(to right top, #1f84f9, #207ff2, #207aea, #2076e3, #2071dc, #226cd5, #2366cf, #2461c8, #2759c0, #2a51b7, #2c4aaf, #2d42a6);
+   margin-top: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+ }
+ body{
+     background-color: #F3F3F5;
+ }
+
+    
+.in{
+    padding-bottom: 15px;  
+    
+}
+#sboxheading{
+    color: white;
+    margin-bottom: 8px;
+    
+
+}
+.links a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-style:dashed;
+}
+.links{
+    color: white;
+    font-size: 8pt;
+}
+.secondbox{
+    background-color: #F3F3F5;
+    
+}
+.box{
+    font-size: 8pt;
+    padding-right: 0px;
+     padding-left: 0px;
+}
+.abox{
+    padding-bottom: 25px;
+    margin: 5px;
+    border-right: 1px solid #F3F3F5;
+    border-bottom: 1px solid #F3F3F5;
+}
+.dbox{
+    padding-top: 25px;
+    margin: 5px;
+    border-right: 1px solid #F3F3F5;
+    
+}
+.rborder{
+    border-right: 1px solid #F3F3F5;
+    
+
+}
+.theads{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    
+}
+.thirdbox{
+    margin-top: 25px;
+    background-color: #F3F3F5;
+}
+.cl{
+    background-color: white;
+    margin: 10px;
+}
+
+.he{
+    border-bottom: 1px solid #F3F3F5; 
+    padding: 10px;
+}
+.smallbox{
+    
+    background-color: #F3F3F5;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 7px;
+}
+.round{
+    border-radius: 60%;
+    
+}
+.bluet{
+    color: #1f84f9;
+    font-size: 10pt;
+}
+.gsmall{
+    color: gray;
+    font-size: 9pt;
+}
+.bgray{
+    font-size: 10pt;
+    color: gray;
+}
+.bblack{
+    font-size: 11pt;
+    color: black;
+}
+.bbgray{
+    color: gray;
+    font-size: 13pt;
+}
